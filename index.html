@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/icon.png" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="script.js"></script>
+    <title>WeatherWise // Your Weather Guide</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">weather<span>wise</span></h1>
+      <form class="search" name="search">
+        <input
+          class="search-box"
+          type="search"
+          placeholder="Enter a city name..."
+        />
+      </form>
+      <button class="btn-location">
+        <a href="#">Use Current Location</a>
+        <ion-icon name="locate"></ion-icon>
+      </button>
+    </nav>
+
+    <div class="weather-container">
+      <h1 class="primary-heading">
+        Search to get weather details and five day forecast!
+      </h1>
+      <div class="weather-details"></div>
+      <div class="forecast-container">
+        <h1>5 days forecast</h1>
+        <div class="weather-div"></div>
+      </div>
+    </div>
+  </body>
+</html>
