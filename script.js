@@ -8,15 +8,7 @@ const weatherDiv = document.querySelector(".weather-div");
 const currentWeather = document.querySelector(".weather-details");
 const forecastContainer = document.querySelector(".forecast-container");
 const primaryHeading = document.querySelector(".primary-heading");
-const loadingSpinner = document.querySelector(".loading-spinner");
-
-const displaySpinner = () => {
-  loadingSpinner.classList.add("loader");
-};
-
-const removeSpinner = () => {
-  loadingSpinner.classList.remove("loader");
-};
+ 
 //display error message on UI
 const displayError = (error) => {
   primaryHeading.textContent = error;
